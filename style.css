@@ -114,3 +114,19 @@ footer {
   padding: 15px;
   font-size: 0.9em;
 }
+
+.comic-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.comic-wrapper img {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
