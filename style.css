@@ -1,102 +1,89 @@
-/* ベース設定 */
 body {
-  font-family: "Helvetica", "Yu Gothic", sans-serif;
+  font-family: "Helvetica", sans-serif;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
-/* ヘッダー */
 header {
   background-color: #333;
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.4em;
-  letter-spacing: 1px;
+  font-size: 2em;
 }
 
 header p {
-  margin: 10px 0 0;
-  font-size: 1.1em;
+  margin: 5px 0 0;
+  font-size: 1em;
 }
 
-/* メイン */
 main {
-  padding: 40px 20px;
-  max-width: 1000px;
+  padding: 20px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* セクション共通 */
 section {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 1.8em;
   border-bottom: 2px solid #ccc;
-  padding-bottom: 8px;
-  margin-bottom: 25px;
-  color: #222;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-/* 自己紹介写真 */
 .profile-photos {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .profile-photos img {
-  border-radius: 12px;
+  border-radius: 10px;
   width: 200px;
   height: auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 作品紹介 */
 .work-item {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.work-item p {
-  margin: 5px 0;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* 動画 */
 video {
   display: block;
-  margin: 0 auto 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 10px;
 }
 
-/* 漫画部分 */
+/* 漫画画像表示用 */
 .comic-wrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .comic-wrapper img {
-  width: 45%;
-  height: auto;
+  width: 100%;
+  max-width: 800px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* リンク */
 a {
   color: #0066cc;
   text-decoration: none;
@@ -106,11 +93,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* フッター */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 10px;
 }
