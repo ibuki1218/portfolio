@@ -1,71 +1,102 @@
+/* ベース設定 */
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica", "Yu Gothic", sans-serif;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
+/* ヘッダー */
 header {
   background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.4em;
+  letter-spacing: 1px;
 }
 
 header p {
-  margin: 5px 0 0;
-  font-size: 1em;
+  margin: 10px 0 0;
+  font-size: 1.1em;
 }
 
+/* メイン */
 main {
-  padding: 20px;
-  max-width: 900px;
+  padding: 40px 20px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+/* セクション共通 */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 h2 {
+  font-size: 1.8em;
   border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  color: #222;
 }
 
+/* 自己紹介写真 */
 .profile-photos {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
-  margin-bottom: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .profile-photos img {
-  border-radius: 10px;
+  border-radius: 12px;
   width: 200px;
   height: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* 作品紹介 */
 .work-item {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.work-item p {
+  margin: 5px 0;
 }
 
+/* 動画 */
 video {
   display: block;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* 漫画部分 */
+.comic-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.comic-wrapper img {
+  width: 45%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* リンク */
 a {
   color: #0066cc;
   text-decoration: none;
@@ -75,9 +106,11 @@ a:hover {
   text-decoration: underline;
 }
 
+/* フッター */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  font-size: 0.9em;
 }
